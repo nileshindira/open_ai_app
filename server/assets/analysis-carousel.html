@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Stocks: Analysis Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>#root{font-family:ui-sans-serif,system-ui;}</style>
+  <link rel="stylesheet" href="stock-widgets.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="stock-widgets.js"></script>
+  <script>
+    (function () {
+      const data = window.__WIDGET_DATA__ || { heading: "Analysis", cards: [] };
+      window.StockWidgets.mountAnalysisCarousel(document.getElementById('root'), data);
+    })();
+  </script>
+</body>
+</html>
